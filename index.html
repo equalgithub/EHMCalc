@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profit Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Profit Calculator</h1>
+        <form method="post" action="/">
+            <div class="form-group">
+                <label>Amount of money you have:</label>
+                <input type="number" name="money" required>
+            </div>
+            <div class="form-group">
+                <label>Amount of gold bars you have:</label>
+                <input type="number" name="gold_bars" required>
+            </div>
+            <div class="form-group">
+                <label>Amount of diamonds you have:</label>
+                <input type="number" name="diamonds" required>
+            </div>
+            <div class="form-group">
+                <label>Amount of cookies you have:</label>
+                <input type="number" name="cookies" required>
+            </div>
+            <div class="form-group">
+                <label>Amount of energy drinks you have:</label>
+                <input type="number" name="energy_drinks" required>
+            </div>
+            <div class="form-group">
+                <label>Amount of jewelry you have:</label>
+                <input type="number" name="jewelry" required>
+            </div>
+            <div class="form-group">
+                <label>Number of bombs used:</label>
+                <input type="number" name="bombs_bought" required>
+            </div>
+            <button type="submit" class="calculate-btn">Calculate Profits</button>
+        </form>
+    </div>
+</body>
+</html>
