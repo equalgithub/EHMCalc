@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profit Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Your Profits Summary</h1>
+        <div class="result">
+            <p class="result-item"><span class="item-label">Money:</span> {{ profits }}</p>
+            <p class="result-item"><span class="item-label">Gold Bars Value:</span> {{ gold_value }}</p>
+            <p class="result-item"><span class="item-label">Diamonds Value:</span> {{ diamonds_value }}</p>
+            <p class="result-item"><span class="item-label">Cookies Value:</span> {{ cookies_value }}</p>
+            <p class="result-item"><span class="item-label">Energy Drinks Value:</span> {{ energy_drinks_value }}</p>
+            <p class="result-item"><span class="item-label">Jewelry Value:</span> {{ jewelry_value }}</p>
+            <p class="result-item"><span class="item-label">Bombs Cost:</span> {{ bombs_cost }}</p>
+            <p class="result-item"><span class="item-label">Total Profits:</span> {{ profits }}</p>
+        </div>
+    </div>
+</body>
+</html>
